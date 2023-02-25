@@ -18,7 +18,7 @@ def medical_insurance(input_data):
     
     
 def main():
-    st.title("Heart Disease Prediction")
+    st.title("Medical Insurance")
     age = st.text_input('Age')
     sex = st.text_input('Sex (1->Male, 0->Female)')
     
