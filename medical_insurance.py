@@ -15,6 +15,7 @@ def medical_insurance(input_data):
     input_data_reshape = input_data_as_np_array.reshape(1,-1)
     prediction = loaded_model.predict(input_data_reshape)
     print(prediction)
+    return prediction
     
     
 def main():
@@ -31,7 +32,7 @@ def main():
     #available for prediction
     Insurance = ''
     if st.button('Medical Insurance Amount:'):
-        Insurance = medical_insurance([age,sex,bmi,smoker,region	,children])
+        Insurance = medical_insurance([age,sex,bmi,smoker,region,children])
    
     st.success(Insurance)
 if __name__ == '__main__':
